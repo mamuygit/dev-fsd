@@ -8,6 +8,7 @@
     Hello World !!!!
     FSD
     <?php
+    require_once 'config.php';
     echo('hello');
       // require_once 'config.php';
       // try {
