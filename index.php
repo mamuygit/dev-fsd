@@ -25,7 +25,7 @@
           $sql = "SELECT LastName FROM MyGuests";
           // use exec() because no results are returned
           $conn->exec($sql);
-          echo "Table MyGuests created successfully";
+          echo("Table MyGuests created successfully");
           //echo($oConn)
           // $oStmt = $oConn->prepare('SELECT data FROM `hello_world`');
           // $oResult = $oStmt->fetchAll();
@@ -35,7 +35,7 @@
           // }
 
       } catch(PDOException $e) {
-          echo 'ERROR: ' . $e->getMessage();
+          echo('ERror')
       }
     ?>
   </body>
