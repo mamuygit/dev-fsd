@@ -11,7 +11,7 @@
       require_once 'config.php';
       // require_once 'config.php';
       $conn_str = getenv("MYSQLCONNSTR_consfsd");
-      echo($conn_str);
+      echo($conn_str .'a');
       // try {
       //     $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
       //     $oConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
