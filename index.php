@@ -10,8 +10,15 @@
     <?php
       require_once 'config.php';
       // require_once 'config.php';
+      define('DB_NAME', getenv('DBNAME'));
+      /** MySQL database username */
+      define('DB_USER', getenv('DBUSER'));
+      /** MySQL database password */
+      define('DB_PASSWORD', getenv('DBPASSWORD'));
+      /** MySQL hostname */
+      define('DB_HOST', getenv('DBHOST'));
       $conn_str = getenv("MYSQLCONNSTR_consfsd");
-      echo($conn_str .'a');
+      echo($DB_NAME);
       // try {
       //     $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
       //     $oConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
