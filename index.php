@@ -10,7 +10,7 @@
     <?php
       require_once 'config.php';
       // require_once 'config.php';
-      $conn_str = getenv("consfsd");
+      $conn_str = getenv("MYSQLCONNSTR_consfsd");
       echo($conn_str);
       // try {
       //     $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
