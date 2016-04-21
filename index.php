@@ -10,7 +10,6 @@
     <?php
       require_once 'config.php';
       // require_once 'config.php';
-      try {
           $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -22,7 +21,7 @@
           // email VARCHAR(50),
           // reg_date TIMESTAMP
           // )";
-          $sql = "SELECT LastName FROM MyGuests";
+          $sql = "SELECT * FROM MyGuests";
           // use exec() because no results are returned
           $conn->exec($sql);
           echo("Table MyGuests created successfully");
@@ -34,9 +33,6 @@
           //     print_r($aRow['data']);
           // }
 
-      } catch(PDOException $e) {
-          echo('ERror')
-      }
     ?>
   </body>
 </html>
