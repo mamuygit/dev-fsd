@@ -21,11 +21,11 @@
           // email VARCHAR(50),
           // reg_date TIMESTAMP
           // )";
-          $stmt = $conn->prepare("SELECT * FROM MyGuests");
-          $stmt->execute();
+          //$stmt = $conn->prepare("SELECT * FROM MyGuests");
+          //$stmt->execute();
 
           // set the resulting array to associative
-          $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+          //$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
           echo("Table MyGuests created successfully");
           //echo($oConn)
           // $oStmt = $oConn->prepare('SELECT data FROM `hello_world`');
